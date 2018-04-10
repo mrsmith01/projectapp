@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+<div class="container">
+    {% block body %}
+    <h1>Items</h1>
+    {% for i in items %}
+    <ul class="list-group">
+        <li class="list-group item"><a href='item/{{i.id}}'>{{i.itemName}}</a></li>
+    </ul> {% endfor %} {% endblock %}
+</div>
